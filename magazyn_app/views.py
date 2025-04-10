@@ -16,3 +16,4 @@ def info_produkt(request, produkt_id):
 
     return render(request, "produkty/szczegoly_produktow.html", {"produkty": Produkt, "warianty": warianty})
 
+

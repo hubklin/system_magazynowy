@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head> 
+    <head>
+        {% load static %}
         <title>Bazowa</title>
+        <link rel="stylesheet" href="{% static 'magazyn_app/css/bootstrap.css' %}">
     </head>
     <body>
         {% include 'magazyn_app/navbar.html' %}
-    
 
         {% block content %}
 
         {% endblock %}
-        
+    
+    <script src="{% static 'magazyn_app/js/bootstrap.bundle.min.js' %}"></script>
     </body>
+    
 </html>
+
